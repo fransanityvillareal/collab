@@ -3,53 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>Group3_Hobbies</title>
+    <style>  
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wholePage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .resumeLinks {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .resumeLinks a {
+            color: #333;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: 500;
+        }
+        .resumeLinks a:not(:last-child) { 
+            border-right: 1px solid #333;
+        } 
+        .resumeLinks a:hover {
+            color: #cc0300;
+            text-decoration: underline;
+        }
+
         img {
             border-radius: 50%;
             width: 300px;
             height: 300px;
             object-fit: cover;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-    
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #222121;
+        }
+
+        th {
+            background-color: #ffdada;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        li {
+            margin: 0 30px;
+        }
     </style>
 </head>
-    <body>
-        <a href="https://media.philstar.com/photos/2019/02/14/nat2-luis-raymund-villafuerte-jr-fb-page_2019-02-14_19-39-03.jpg">Lray hottie</a>
-        <img src="https://media.philstar.com/photos/2019/02/14/nat2-luis-raymund-villafuerte-jr-fb-page_2019-02-14_19-39-03.jpg" alt="Lray">
-
-        <h2>Exercise 2 - Simple Static WebPage</h2>
-        <p>Short description</p>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif; line-height: 1.6; padding: 20px; max-width: 1000px; margin: 0 auto;">
+    <div class="wholePage">
+        <div class="profile-section">
+            <img src="https://media.philstar.com/photos/2019/02/14/nat2-luis-raymund-villafuerte-jr-fb-page_2019-02-14_19-39-03.jpg" alt="Lray">
+            <h2>Exercise 2 - Simple Static Web Page</h2>
+            <h3>Group 3</h3>
+            <div class="resumeLinks">
+                <a href="https://tinesra.github.io/Trends-Repository-24-25/"><i>BICO</i></a>
+                <a href="Link o resume"><i>PALOMANIA</i></a>
+                <a href="Link o resume"><i>SALEN</i></a>
+                <a href="Link o resume"><i>VILLAREAL</i></a>
+            </div>         
+            <p style="margin-top: 30px;">Welcome to Group 3's hobbies and interests page! Here, We showcase our favorite activities and explain how they contribute to our own personal growth and well-being. These hobbies helps us maintain a balanced lifestyle while developing various skills.</p>
+        </div>
 
         <div>
-            <table style="border: solid;">
-                <tr style=" border: width 1px;">
-                    <th>Hobbies/Interest</th>
-                    <th>Benefits</t>
-                </tr>
-                <tr>
-                    <td style=" border-right: 1px solid black; padding-right: 30px">
-                        <ul>
-                            <li>Coding</li>
-                            <li>Arts and Crafts</li>
-                            <li>Sports</li>
-                            <li>Technologies</li>
-                            <li>Music and Movies</li>
-
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Stress-giver/reliever</li>
-                            <li>Balances both online and offline endeavors of the students</li>
-                            <li>Health and fun</li>
-                            <li>Exploration of new trends</li>
-                            <li>Relaxation and Entertainment</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <h4 style="margin-top: 30px;"><b>General</b></h4>
+            <p style="margin-left: 30px;"><i>As students from different backgrounds, we naturally have varied hobbies and interests. 
+                However, being exposed to the same environment has highlighted our shared love for <b>technology, arts, sports, and entertainment</b>. 
+                These passions are essential to our well-being, offering fulfillment, reducing stress, and helping us maintain balance. 
+                Engaging in what we enjoy not only improves our mental health and skills but also connects us with like-minded individuals and new experiences.</i></p>
+            <h4 style="margin-top: 30px;"><b>Specific</b></h4>
         </div>
-        
-    </body>
+        <table style="width: 100%; max-width: 800px; border-collapse: collapse; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <tr>
+                <th>Hobbies/Interest</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Coding</li>
+                        <li>Arts and Crafts</li>
+                        <li>Sports</li>
+                        <li>Technologies</li>
+                        <li>Games</li>
+                        <li>Music and Movies</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Stress-giver/reliever</li>
+                        <li>Balances both online and offline endeavors of the students</li>
+                        <li>Health and fun</li>
+                        <li>Exploration of new trends</li>
+                        <li>Fun engagements with each other</li>
+                        <li>Relaxation and Entertainment</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
 </html>
